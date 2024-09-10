@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/first_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+        <ImageView
+            android:layout_width="1200dp"
+            android:layout_height="200dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/logoapp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="John Lucky Louis Pilit"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:textSize="25sp"
+            android:background="@null" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Application Developer"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18sp"
+            android:background="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_linear_layout"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="150dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(63+) 945 243 0254"
+            android:drawableLeft="@drawable/contact"
+            android:background="@android:color/transparent"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jlpilit123@gmail.com"
+            android:drawableLeft="@drawable/email"
+            android:background="@android:color/transparent"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"/>
+    </LinearLayout>
+</RelativeLayout>
+
